@@ -1,0 +1,55 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~ (master)
+$ cd 2BL22CS182
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ ls
+182.txt  Add_182.c  C2/  branch.txt  branchcheck.txt  branchcheck_branchfile.txt  firstbranch.txt  newfile.txt  sample.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ nano lab2.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+warning: in the working copy of 'lab2.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "Lab2"
+[master da7aba9] Lab2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab2.txt
+
+
+
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git checkout Sumeet
+Switched to branch 'Sumeet'
+Your branch is ahead of 'origin/Sumeet' by 1 commit.
+  (use "git push" to publish your local commits)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ nano lab21.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ git add .
+warning: in the working copy of 'lab21.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ git commit -m "Branch"
+[Sumeet c1f5107] Branch
+ 2 files changed, 3 insertions(+)
+ create mode 160000 College-Management-System
+ create mode 100644 lab21.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git merge Sumeet
+Merge made by the 'ort' strategy.
+ lab21.txt                 | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 lab21.txt
