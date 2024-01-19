@@ -1,0 +1,67 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~ (master)
+$ cd 2BL22CS182
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git stash
+warning: in the working copy of 'sample.txt', LF will be replaced by CRLF the next time Git touches it
+Saved working directory and index state WIP on master: 77828ea Merge branch 'Sumeet' Branch file
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git checkout Sumeet
+Switched to branch 'Sumeet'
+Your branch is ahead of 'origin/Sumeet' by 1 commit.
+  (use "git push" to publish your local commits)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ nano newfile.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ git add .
+warning: in the working copy of 'newfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (Sumeet)
+$ git checkout master
+Switched to branch 'master'
+A       newfile.txt
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git stash apply
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   newfile.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sample.txt
+
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add sample.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git stash apply
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   newfile.txt
+        modified:   sample.txt
+
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "final"
+[master 18835ca] final
+ 2 files changed, 3 insertions(+)
+ create mode 100644 newfile.txt
