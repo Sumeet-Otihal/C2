@@ -1,0 +1,132 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "First"
+[master 7f64cc4] First
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 160000 College-Management-System
+ create mode 100644 names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "Second"
+[master 7df274f] Second
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "Third"
+[master 3116dfc] Third
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add .
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "Fourth"
+[master df87f8b] Fourth
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9 (HEAD -> master)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+commit 7f64cc425398e6241505a8e87ec2d275492f75c4
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:47:32 2024 -0800
+
+    First
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git tag v1.0 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git checkout v1.0
+Note: switching to 'v1.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 7df274f Second
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 ((v1.0))
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 ((v1.0))
+$ git checkout -b Sumeet v1.0
+fatal: a branch named 'Sumeet' already exists
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 ((v1.0))
+$ git checkout -b TAG v1.0
+Switched to a new branch 'TAG'
+M       names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (TAG)
+$  nano names.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (TAG)
+$ git add .
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (TAG)
+$ git commit -m "Saved with Tag"
+[TAG e21896e] Saved with Tag
+ 1 file changed, 2 insertions(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (TAG)
+$ git checkout master
+Switched to branch 'master'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$  nano names.txt
