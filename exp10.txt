@@ -1,0 +1,41 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git fetch origin master
+remote: Enumerating objects: 49, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 47 (delta 16), reused 46 (delta 15), pack-reused 0
+Unpacking objects: 100% (47/47), 4.41 KiB | 3.00 KiB/s, done.
+From https://github.com/Sumeet-Otihal/C2
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log --author="Sumeet-Otihal" --since="2023-12-29" --until="2024-01-19"
+commit 045e8ae06b67e33b2932c9c0038c1517ec6903b4
+Author: Sumeet Otihal <152759370+Sumeet-Otihal@users.noreply.github.com>
+Date:   Thu Jan 18 21:05:59 2024 -0800
+
+    Add files via upload
+
+    Lab exp 2 & 3
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log --author="vinodys" --since="2023-12-29" --until="2024-01-19"
+commit f7c68e149624622efc003045a7644b657ff318b1
+Merge: dd6c20f 2cc0a43
+Author: PragnyaNalwar <vinodys12369@gmail.com>
+Date:   Thu Jan 18 21:31:23 2024 -0800
+
+    Merge branch 'master' of https://github.com/Sumeet-Otihal/C2
+
+commit dd6c20f4adad3d286bbc358490dd1b30e04e7599
+Author: PragnyaNalwar <vinodys12369@gmail.com>
+Date:   Thu Jan 18 21:19:53 2024 -0800
+
+    my file
+
+commit 2ea19740466a1f9d5f618a3f4d614042b5f9922b
+Author: PragnyaNalwar <vinodys12369@gmail.com>
+Date:   Thu Jan 18 20:27:29 2024 -0800
+
+    for stash
