@@ -1,0 +1,195 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~ (master)
+$ cd 2BL22CS182
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git branch c2_1
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git branch c2_2
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git checkout c2_1
+Switched to branch 'c2_1'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git add .
+warning: in the working copy of 'cherry.txt', LF will be replaced by CRLF the next time Git touches it
+
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git commit -m "First commit"
+[c2_1 015bdd4] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git add .
+warning: in the working copy of 'cherry.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git commit -m "Second commit"
+[c2_1 ae3c6e0] Second commit
+ 1 file changed, 2 insertions(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git add .
+warning: in the working copy of 'cherry.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git commit -m "Third commit"
+[c2_1 9197445] Third commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git add .
+warning: in the working copy of 'cherry.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git commit -m "Fourth commit"
+[c2_1 dfee62f] Fourth commit
+ 1 file changed, 2 insertions(+)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git log
+commit dfee62f8a93aad8df30d179b78d3d84c9524deff (HEAD -> c2_1)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:48:47 2024 +0530
+
+    Fourth commit
+
+commit 9197445b8ecd296376259e8f9ba76036afb7d786
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:48:15 2024 +0530
+
+    Third commit
+
+commit ae3c6e0cf34299cb36b89e9f9dfb4cccfc6c7e00
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:47:48 2024 +0530
+
+    Second commit
+
+commit 015bdd473714dc871890856d97f253906efdcc5b
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:47:11 2024 +0530
+
+    First commit
+
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9 (master, c2_2)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+commit 7f64cc425398e6241505a8e87ec2d275492f75c4
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+:
+commit dfee62f8a93aad8df30d179b78d3d84c9524deff (HEAD -> c2_1)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:48:47 2024 +0530
+
+    Fourth commit
+
+commit 9197445b8ecd296376259e8f9ba76036afb7d786
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:48:15 2024 +0530
+
+    Third commit
+
+commit ae3c6e0cf34299cb36b89e9f9dfb4cccfc6c7e00
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:47:48 2024 +0530
+
+    Second commit
+
+commit 015bdd473714dc871890856d97f253906efdcc5b
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Fri Feb 9 09:47:11 2024 +0530
+
+    First commit
+
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9 (master, c2_2)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+commit 7f64cc425398e6241505a8e87ec2d275492f75c4
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ git checkout c2_2
+Switched to branch 'c2_2'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2)
+$ git cherry-pick ae3c6e0cf34299cb36b89e9f9dfb4cccfc6c7e00^ 9197445b8ecd296376259e8f9ba76036afb7d786
+[c2_2 48e0423] First commit
+ Date: Fri Feb 9 09:47:11 2024 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cherry.txt
+Auto-merging cherry.txt
+CONFLICT (content): Merge conflict in cherry.txt
+error: could not apply 9197445... Third commit
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2|CHERRY-PICKING)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2|CHERRY-PICKING)
+$ git add .
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2|CHERRY-PICKING)
+$ git cherry-pick --continue
+[c2_2 89dd192] Cherry picked
+ Date: Fri Feb 9 09:48:15 2024 +0530
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2)
+$ nano cherry.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_2)
+$ git checkout c2_1
+Switched to branch 'c2_1'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (c2_1)
+$ nano cherry.txt
