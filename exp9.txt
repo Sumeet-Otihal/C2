@@ -1,0 +1,61 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9 (HEAD -> master)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+commit 7f64cc425398e6241505a8e87ec2d275492f75c4
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:47:32 2024 -0800
+
+    First
+
+commit ea825a6e45f66359d77abc60a5b49a8da2e63994
+Merge: 8314db7 14c770a
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:01:43 2024 -0800
+
+    Merge branch 'master' of https://github.com/Sumeet-Otihal/C2
+
+commit 8314db7cb13fe1fc0b866c05c2957790ea61ce66 (feature-branch_182)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 21:45:14 2024 -0800
+
+    git B
+
+commit 14c770a69fdac7244777e5fe9d6f30f9e29f44c8
+Author: unknown <vinodys12369@gmail.com>
+Date:   Thu Feb 1 20:15:59 2024 -0800
+
+    git a
+
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git show 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+diff --git a/names.txt b/names.txt
+index da59372..543a87a 100644
+--- a/names.txt
++++ b/names.txt
+@@ -1 +1,2 @@
+ Sumeet
++Vinod
