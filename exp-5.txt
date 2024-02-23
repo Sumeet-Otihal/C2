@@ -1,0 +1,91 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ cd ..
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~ (master)
+$ mkdir 182rb
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~ (master)
+$ cd 182rb
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git init
+Initialized empty Git repository in C:/Users/BLDEA-CSE/182rb/.git/
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ touch dir1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git add dir1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git commit -m "master commit"
+[master (root-commit) d1f98b8] master commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git branch rb
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git checkout rb
+Switched to branch 'rb'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ touch rb1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ git add rb1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ git commit -m "branch commit rb1"
+[rb eb8f842] branch commit rb1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 rb1.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ touch rb2.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ git add rb2.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ git commit -m "branch commit rb2"
+[rb ef86e4f] branch commit rb2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 rb2.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (rb)
+$ git checkout master
+Switched to branch 'master'
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git log
+commit d1f98b83f6ae8bdafeb739c9d1e8b6cd3d2d51fb (HEAD -> master)
+Author: PradnyaBondarde <pradnya.bondarde@gmail.com>
+Date:   Fri Feb 23 10:58:49 2024 +0530
+
+    master commit
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git rebase rb
+Successfully rebased and updated refs/heads/master.
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/182rb (master)
+$ git log
+commit ef86e4f6f09bf06a1bcea8d53378c9ad73e55dd1 (HEAD -> master, rb)
+Author: PradnyaBondarde <pradnya.bondarde@gmail.com>
+Date:   Fri Feb 23 11:00:07 2024 +0530
+
+    branch commit rb2
+
+commit eb8f8420cc48a6994f9e118220429b539fc72bc3
+Author: PradnyaBondarde <pradnya.bondarde@gmail.com>
+Date:   Fri Feb 23 10:59:49 2024 +0530
+
+    branch commit rb1
+
+commit d1f98b83f6ae8bdafeb739c9d1e8b6cd3d2d51fb
+Author: PradnyaBondarde <pradnya.bondarde@gmail.com>
+Date:   Fri Feb 23 10:58:49 2024 +0530
+
+    master commit
