@@ -1,0 +1,25 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log -n 5
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9 (HEAD -> master)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+commit 7f64cc425398e6241505a8e87ec2d275492f75c4
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:47:32 2024 -0800
+
+    First

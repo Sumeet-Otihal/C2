@@ -1,0 +1,58 @@
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ ls
+182.txt                           appi.txt                    hi.txt
+190add.c                          b.c                         lab2.txt
+2.txt                             branch.txt                  lab21.txt
+3.txt                             branchcheck.txt             names.txt
+A.c                               branchcheck_branchfile.txt  newfile.txt
+Add_182.c                         check.txt                   sample.txt
+C2/                               example.txt                 text.txt
+Student-Result-Managment-System/  firstbranch.txt             vin.txt
+add                               git/                        vinod.c
+add.c                             git3.txt                    vinod.txt
+app.txt                           go.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ nano 182.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git add 182.txt
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git commit -m "Latest Commit"
+[master fb31438] Latest Commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git log
+commit fb31438e098b72453082dd1f9c1d28d5799c3254 (HEAD -> master)
+Author: Sumeet-Otihal <pradnya.bondarde@gmail.com>
+Date:   Fri Feb 23 09:49:28 2024 +0530
+
+    Latest Commit
+
+commit df87f8bd2cd1c8b63ff836a2e2ec472b0852b3f9
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:53 2024 -0800
+
+    Fourth
+
+commit 3116dfc16d2c40fac2c53220c6e1615ef774bf8d
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:28 2024 -0800
+
+    Third
+
+commit 7df274fd4ca02cc4ee4ceaaf20f450a888d99e66 (tag: v1.0)
+Author: Sumeet-Otihal <www.sumeetotihal@gmail.com>
+Date:   Thu Feb 1 22:48:03 2024 -0800
+
+    Second
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ git revert fb31438e098b72453082dd1f9c1d28d5799c3254
+[master e7d9471] Undoing the latest commit
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+BLDEA-CSE@DESKTOP-L99K337 MINGW64 ~/2BL22CS182 (master)
+$ nano 182.txt
